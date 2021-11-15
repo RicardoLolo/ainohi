@@ -5,6 +5,25 @@
     <title>Title</title>
 </head>
 <body>
-
+<script>
+    document.write("2 ")
+    let dem = 1;
+    let count = 0;
+    for (let soNguyenTo = 3; soNguyenTo > 0; soNguyenTo++) {
+        for (let k = 2; k <= Math.sqrt(soNguyenTo); k++) {
+            if (soNguyenTo % k == 0) {
+                count++
+            }
+        }
+        if (count == 0) {
+            document.write(soNguyenTo + " ")
+            dem = dem + 1;
+        }
+        count = 0;
+        if (dem == 20) {
+            break;
+        }
+    }
+</script>
 </body>
 </html>
