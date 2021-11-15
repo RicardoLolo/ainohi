@@ -7,23 +7,24 @@
 <body>
 <script>
     document.write("2 ")
-    let dem = 1;
+    let deep = 1;
     let count = 0;
     for (let soNguyenTo = 3; soNguyenTo > 0; soNguyenTo++) {
-        for (let k = 2; k <= Math.sqrt(soNguyenTo); k++) {
-            if (soNguyenTo % k == 0) {
+        for (let a = 2; a <= Math.sqrt(soNguyenTo); a++) {
+            if (soNguyenTo % a == 0) {
                 count++
             }
         }
         if (count == 0) {
             document.write(soNguyenTo + " ")
-            dem = dem + 1;
+            deep = deep + 1;
         }
         count = 0;
-        if (dem == 20) {
+        if (deep == 20) {
             break;
         }
     }
 </script>
+
 </body>
 </html>

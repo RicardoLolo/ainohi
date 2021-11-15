@@ -4,30 +4,30 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<!--<style>-->
-<!--    table, td, tr {-->
-<!--        border: 10px solid;-->
-<!--        border-collapse: collapse;-->
-<!--    }-->
-<!--    table {-->
-<!--        width: 600px;-->
-<!--        height: 400px;-->
-<!--        text-align: center;-->
-<!--    }-->
-<!--</style>-->
-<!--<body>-->
-<!--<h5 id="mulTable"></h5>-->
-<!--</body>-->
-<!--<script>-->
-<!--    let mulTable = "<table>";-->
-<!--    for (let i = 2; i < 10; i++) {-->
-<!--        mulTable = mulTable + "<tr>"-->
-<!--        for (let j = 1; j < 10; j++) {-->
-<!--            mulTable = mulTable + "<td>" + i + " x " + j + " = " + (i* j) + "</td>"-->
-<!--        }-->
-<!--        mulTable = mulTable + "</tr>"-->
-<!--    }-->
-<!--    mulTable = mulTable + "</table>"-->
-<!--    document.getElementById("mulTable").innerHTML = mulTable-->
-<!--</script>-->
+<style>
+    table, td, tr {
+        border: 10px solid;
+        border-collapse: collapse;
+    }
+    table {
+        width: 800px;
+        height: 400px;
+        text-align: center;
+    }
+</style>
+<body>
+<h5 id="mulTable"></h5>
+</body>
+<script>
+    let mulTable = "<table>";
+    for (let i = 2; i < 10; i++) {
+        mulTable = mulTable + "<tr>"
+        for (let j = 1; j < 10; j++) {
+            mulTable = mulTable + "<td>" + i + " x " + j + " = " + (i* j) + "</td>"
+        }
+        mulTable = mulTable + "</tr>"
+    }
+    mulTable = mulTable + "</table>"
+    document.getElementById("mulTable").innerHTML = mulTable
+</script>
 </html>
